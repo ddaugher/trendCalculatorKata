@@ -1,4 +1,4 @@
-package com.pillar.battle
+package dj
 
 class TrendUtils {
 
@@ -14,6 +14,7 @@ class TrendUtils {
 
     if (pair[0] == pair[1]) return 0.0
 
+    (pair[1] - pair[0])/pair[0]
   }
 
 }

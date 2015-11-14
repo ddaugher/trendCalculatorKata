@@ -1,4 +1,4 @@
-package com.pillar.battle
+package dj
 
 import org.junit.Test
 
@@ -27,5 +27,10 @@ class TrendUtilsTests {
   @Test
   void shouldReturnZeroWhenP1EqualsP2() {
     assert 0.0 == TrendUtils.findTrend([1.0, 1.0])
+  }
+
+  @Test
+  void shouldReturnProperValue() {
+    assert 1.0 == TrendUtils.findTrend([5.0, 10.0])
   }
 }

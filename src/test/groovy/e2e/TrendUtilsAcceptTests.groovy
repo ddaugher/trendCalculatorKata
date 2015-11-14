@@ -1,6 +1,6 @@
 package kataBattle.e2e
 
-import com.pillar.battle.*
+import dj.*
 import org.junit.Test
 
 class TrendUtilsAcceptTests {
