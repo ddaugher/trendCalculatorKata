@@ -1,3 +1,5 @@
+package trend
+
 class TrendUtils {
 
   def static findTrend(list) {

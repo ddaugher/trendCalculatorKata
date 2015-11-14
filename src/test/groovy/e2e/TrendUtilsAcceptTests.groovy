@@ -1,7 +1,7 @@
 package e2e
 
-import dj.*
 import org.junit.Test
+import trend.TrendUtils
 
 class TrendUtilsAcceptTests {
 

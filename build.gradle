@@ -14,7 +14,7 @@ dependencies {
 }
 
 task accept(type:Test) {
-    include 'kataBattle/e2e/**'
+    include 'e2e/**'
 }
 
 test {

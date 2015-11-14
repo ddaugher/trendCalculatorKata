@@ -1,3 +1,5 @@
+package trend
+
 import org.junit.Test
 
 class TrendUtilsTests {
