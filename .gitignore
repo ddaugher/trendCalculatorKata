@@ -1,0 +1,13 @@
+.gradle
+build/
+classes/
+*.iml
+gradle/
+gradlew
+gradle.bat
+gradlew.bat
+.idea
+*.ipr
+*.iws
+out/
+code_coverage.log

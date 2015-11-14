@@ -1,0 +1,29 @@
+defaultTasks 'clean', 'test'
+
+apply plugin: 'groovy'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.codehaus.groovy:groovy-all:2.4.5'
+  testCompile 'junit:junit:4.12'
+  testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+}
+
+task accept(type:Test) {
+    include 'kataBattle/e2e/**'
+}
+
+test {
+    testLogging {
+        exceptionFormat = 'full'    
+    }
+    exclude 'kataBattle/e2e/**'
+}
+
+task copyResults(type: Copy) {
+    from'build/reports/tests'
+    into 'displayResults'
+}
