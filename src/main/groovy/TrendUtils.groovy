@@ -1,16 +1,14 @@
-package dj
-
 class TrendUtils {
 
-  def static findTrend(pair) {
+  def static findTrend(list) {
 
-    if (null == pair) return null
+    if (null == list) return null
 
-    if (0 == pair.size()) return null
+    if (0 == list.size()) return null
 
-    if (pair.size() == 1) return 0.0
+    if (list.size() == 1) return 0.0
 
-    calculatePairValue(pair)
+    calculatePairValue(list)
   }
 
   def static calculatePairValue(pair) {

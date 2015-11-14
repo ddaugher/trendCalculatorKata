@@ -1,4 +1,4 @@
-package kataBattle.e2e
+package e2e
 
 import dj.*
 import org.junit.Test

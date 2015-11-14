@@ -1,5 +1,3 @@
-package dj
-
 import org.junit.Test
 
 class TrendUtilsTests {
@@ -32,5 +30,10 @@ class TrendUtilsTests {
   @Test
   void shouldReturnProperValue() {
     assert 1.0 == TrendUtils.findTrend([5.0, 10.0])
+  }
+
+  @Test
+  void shouldReturnProperValueWhenListOfThreeSupplied() {
+    assert 2.0 == TrendUtils.findTrend([0.0, 5.0, 10.0])
   }
 }

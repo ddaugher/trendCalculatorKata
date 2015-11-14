@@ -1,6 +1,7 @@
 defaultTasks 'clean', 'test'
 
 apply plugin: 'groovy'
+apply plugin: 'idea'
 
 repositories {
   mavenCentral()
@@ -20,7 +21,7 @@ test {
     testLogging {
         exceptionFormat = 'full'    
     }
-    exclude 'kataBattle/e2e/**'
+    exclude 'e2e/**'
 }
 
 task copyResults(type: Copy) {
