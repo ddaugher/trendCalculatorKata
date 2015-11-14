@@ -16,11 +16,10 @@ class TrendUtils {
   }
 
   def static calculatePairValue(pair) {
-    if (pair[0] == 0.0 && pair[1] > 0.0) return 1.0
+    if (pair.head() == 0.0 && pair.last() > 0.0) return 1.0
 
-    if (pair[0] == pair[1]) return 0.0
+    if (pair.head() == pair.last()) return 0.0
 
-    (pair[1] - pair[0])/pair[0]
+    (pair.last() - pair.head())/pair.head()
   }
-
 }
