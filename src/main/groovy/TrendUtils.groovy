@@ -2,13 +2,15 @@ package com.pillar.battle
 
 class TrendUtils {
 
-  def static findTrend(input) {
+  def static findTrend(pair) {
 
-    if (null == input) return null
+    if (null == pair) return null
 
-    if (0 == input.size()) return null
+    if (0 == pair.size()) return null
 
-    if (input.size() == 1) return 0.0
+    if (pair.size() == 1) return 0.0
+
+    if (pair[0] == 0.0 && pair[1] > 0.0) return 1.0
 
   }
 
