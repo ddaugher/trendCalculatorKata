@@ -23,4 +23,9 @@ class TrendUtilsTests {
   void shouldReturnOneWhenP1EqualsZeroAndP2GreaterThanZero() {
     assert 1.0 == TrendUtils.findTrend([0.0, 1.0])
   }
+
+  @Test
+  void shouldReturnZeroWhenP1EqualsP2() {
+    assert 0.0 == TrendUtils.findTrend([1.0, 1.0])
+  }
 }
