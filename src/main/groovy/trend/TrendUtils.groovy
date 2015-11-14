@@ -10,8 +10,8 @@ class TrendUtils {
 
     if (list.size() == 1) return 0.0
 
-    list.collate(2,1,false).collect {
-      calculatePairValue(it)
+    list.collate(2,1,false).collect { pair ->
+      calculatePairValue(pair)
     }.sum()
   }
 
