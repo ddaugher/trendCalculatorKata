@@ -8,9 +8,7 @@ class TrendUtils {
 
     if (list.size() == 1) return 0.0
 
-    def l = list.collate(2,1,false)
-
-    l.collect {
+    list.collate(2,1,false).collect {
       calculatePairValue(it)
     }.sum()
   }
